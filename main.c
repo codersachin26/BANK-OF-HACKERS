@@ -26,8 +26,8 @@ void main()
 
 
 
-    user_functions(u_choice); // this is user_functions for users
-                                // which take one argument as a user choice
+    user_functions(u_choice); // this is user_functions for user
+                                // which take one argument according to a user choice
 
 
 

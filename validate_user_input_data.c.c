@@ -232,7 +232,7 @@ int valid_address(char *p)  //it's take capital letter and numbers
 
             else // user Enter invalid input
                {
-                 printf("\n only capital letter accept\ntry Again\n>>");
+                 printf("\n ERROR:only capital letter accept\ntry Again\n>>");
                  return(1); // return 1 where this function call
                 }
 
@@ -276,7 +276,8 @@ int valid_Email_id(char *p) // user define function for valid E-mail
 
     if(Enter_Email_id[count]>=48&&Enter_Email_id[count]<=57||Enter_Email_id[count]>=65&&Enter_Email_id[count]<=90)
       {                                                              //checking E-mail first character valid or not
-          printf("\n you Enter wrong E-mail ID\n try Again\n>>");
+          printf("\n  ERROR:you Enter wrong E-mail ID\n try Again\n>>");
+    
           return(1);
       }
 
@@ -299,7 +300,7 @@ int valid_Email_id(char *p) // user define function for valid E-mail
           }
           else
                {                                                      // this statement for wrong E-mail ID
-              printf("\n you Enter wrong E-mail ID\ncapital letter not allowed\n try Again\n>>");
+              printf("\n ERROR: you Enter wrong E-mail ID\ncapital letter not allowed\n try Again\n>>");
               return(1);
                }
         }
@@ -400,7 +401,7 @@ int valid_gender_input(char *p)  // for gender input
 
        if(index==0)
        {
-            printf("\n you are not Enter anything\ntry Again");
+            printf("\n  ERROR:you are not Enter anything\ntry Again");
             printf("\n\n>>ENTER: ");
             continue;
 
@@ -413,7 +414,7 @@ int valid_gender_input(char *p)  // for gender input
        }
        else
        {
-           printf("\n you are Enter wrong choice\ntry Again");
+           printf("\n ERROR:you are Enter wrong choice\ntry Again");
             printf("\n\n>>ENTER: ");
             continue;
        }
@@ -481,7 +482,7 @@ int input_relationship_status(char *p)  // its user define function which take u
 
        if(index==0)
        {
-            printf("\n you are not Enter anything\ntry Again");
+            printf("\n ERROR:you are not Enter anything\ntry Again");
             printf("\n\n>>ENTER: ");
             continue;
 
@@ -494,7 +495,7 @@ int input_relationship_status(char *p)  // its user define function which take u
        }
        else
        {
-           printf("\n you are Enter wrong choice\ntry Again");
+           printf("\nERROR: you are Enter wrong choice\ntry Again");
             printf("\n\n>>ENTER: ");
             continue;
        }
@@ -534,7 +535,7 @@ int input_relationship_status(char *p)  // its user define function which take u
         }
         else   //  wrong choice statements
            {
-                printf("\n you do something wrong\ntry Again\n>> ");
+                printf("\n ERROR: you do something wrong\ntry Again\n>> ");
                 return(1);
            }
 
@@ -592,13 +593,13 @@ int valid_user_input_acc() // it take valid account no.
      else
         if(Enter_acc_no[index]==NULL) // user not Entered something
      {
-            printf("\n\n you are not Enter anything\n try again\n\n Hit any key ");
+            printf("\n\n ERROR:you are not Enter anything\n try again\n\n Hit any key ");
                 getch();
                continue;
      }
      else  // invalid user acc no.
      {
-         printf("\n you are not Enter valid user account number\ntry Again\n\n Hit any key");
+         printf("\n ERROR:you are not Enter valid user account number\ntry Again\n\n Hit any key");
          getch();
          continue;
      }
@@ -632,12 +633,12 @@ int user_input_amt() //its take 5 digits amt bal
 
                if(index==0) // empty
                {
-                   printf("\n\n you are not Enter anything\ntry Again\n\n\t\t ENTER AMOUNT:$ ");
+                   printf("\n\nERROR: you are not Enter anything\ntry Again\n\n\t\t ENTER AMOUNT:$ ");
                    continue;
                }
                if(index>=6) // greater than 6 is not allow
                {
-                   printf("\n\n big amount not allow\nonly 5 digits accepts\ntry Again\n\n\t\t ENTER AMOUNT:$ ");
+                   printf("\n\nERROR: big amount not allow\nonly 5 digits accepts\ntry Again\n\n\t\t ENTER AMOUNT:$ ");
                    continue;
 
                }
@@ -679,12 +680,12 @@ int input_valid_pin()
 
                if(Enter_pin[0]==NULL) // empty
                {
-                   printf("\n\n you are not Enter anything\ntry Again\n\n\t\t  PIN CODE:  ");
+                   printf("\n\n ERROR:you are not Enter anything\ntry Again\n\n\t\t  PIN CODE:  ");
                    continue;
                }
                if(index>=5) // greater than 5 is not allow
                {
-                   printf("\n\n big pin not allow\nonly 4 digits accepts\ntry Again\n\n\t\t  PIN CODE:  ");
+                   printf("\n\nERROR: big pin not allow\nonly 4 digits accepts\ntry Again\n\n\t\t  PIN CODE:  ");
                    continue;
 
                }
@@ -697,7 +698,7 @@ int input_valid_pin()
                }
                else
                {
-                   printf("\n only 4 digits accepts\ntry Again\n\n\t\t  PIN CODE:   ");
+                   printf("\nERROR: only 4 digits accepts\ntry Again\n\n\t\t  PIN CODE:   ");
                    continue;
                }
 
